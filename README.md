@@ -27,8 +27,13 @@ Noise is filtered using a simple exponential smoothing function where the contri
 
 ## Results
 
-Red Trace: Raw data from touchRead function
-Green Trace: Data after de-glitching
-Blue Trace: Data after smoothing
+Curves obtained from the SerialPlotter in the Arduino IDE. (Offset for clarity)
+
+1. Red Trace: Raw data from touchRead function
+2. Green Trace: Data after de-glitching
+3. Blue Trace: Data after smoothing
+
+Touching the copper results in the excursion in the data. 
+
 
 ![Results](/doc/results.jpg)
