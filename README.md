@@ -24,3 +24,11 @@ Noise is filtered using a simple exponential smoothing function where the contri
 ## Hardware Set Up
 
 ![Setup using an ESP32 breakout board](/doc/setup.jpg)
+
+## Results
+
+Red Trace: Raw data from touchRead function
+Green Trace: Data after de-glitching
+Blue Trace: Data after smoothing
+
+![Results](/doc/results.jpg)
