@@ -37,3 +37,10 @@ Touching the copper results in the excursion in the data.
 
 
 ![Results](/doc/results.jpg)
+
+
+Feel free to adapt / use as you will. 
+
+Regards, 
+
+John.
