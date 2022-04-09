@@ -22,3 +22,5 @@ To solve this, I added a simple de-glitching feature and provided the option to 
 Noise is filtered using a simple exponential smoothing function where the contribution of a new data point to the current value is determined by a numerical factor ranging from 0 to 1.0. The closer the numerical factor is to 1.0, the less a given point contributes. 
 
 ## Hardware Set Up
+
+![Setup using an ESP32 breakout board](/doc/setup.jpg)
