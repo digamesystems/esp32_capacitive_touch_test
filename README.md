@@ -3,9 +3,11 @@
 Playing with the capacitive touch inputs on the ESP32. 
 -- Based on the Espressif ESP32 TouchRead example code. 
 
-Adding in de-glitching and smoothing of the reported values and dynamic baseling tracking.
+Adding in de-glitching and digital filtering of the reported values and dynamic baseling tracking.
 
-Touch0 is T0 which mapped to GPIO 4.
+In this example I use Touch0 ('T0' in the code) which mapped to GPIO 4.
+
+Keywords: ESP32, touchRead, capacitive touch sensor, de-glitch
 
 ## Background
 
