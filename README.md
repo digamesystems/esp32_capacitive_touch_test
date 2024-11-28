@@ -17,9 +17,9 @@ However, the touchRead function in the ESP Arduino API seems to be susceptible t
 noise. A number of people have reported 'glitching' in the signal. (Sharp,
 single-point spikes in the data.) 
 
-As an experiment to test this, I connected a piece of copper tape to one of the capacitive touch inputs on` my module and started with the TouchRead example from Espressif. I saw much the same thing. 
+As an experiment to test this, I connected a piece of copper tape to one of the capacitive touch inputs on` my module and started with the TouchRead example from Espressif. I saw much the same thing. That said, the magnitude of the glitching behavior is quite dependent upon the geometry of the copper tape pad. (I suspect that a bit of hardware filtering might eliminate much of the issue.) 
 
-To solve this, I added a simple de-glitching feature and provided the option to smooth the data to reduce noise. 
+To solve this in software, I added a simple de-glitching feature and provided the option to smooth the data to reduce noise. 
 
 Noise is filtered using a simple exponential smoothing function where the contribution of a new data point to the current value is determined by a numerical factor ranging from 0 to 1.0. The closer the numerical factor is to 1.0, the less a given point contributes. 
 
